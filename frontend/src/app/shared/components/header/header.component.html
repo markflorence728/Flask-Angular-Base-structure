@@ -1,0 +1,50 @@
+<header>
+  <mat-toolbar>
+    <mat-toolbar-row>
+      <img class="logo" src="assets/images/mycashless-white-logo.png" [height]="40">
+      <div class="row-spacer"></div>
+
+      <button mat-icon-button [matMenuTriggerFor]="matmenu">
+        <mat-icon>language</mat-icon>
+      </button>
+      <mat-menu #matmenu="matMenu">
+        <div mat-menu-item *ngFor="let lang of languages">
+          <a class="language-link" (click)="changeLanguage(lang.name)">
+            <mat-icon>flag</mat-icon>
+            <span>{{lang.label}}</span>
+          </a>
+        </div>
+      </mat-menu>
+
+      <button *ngIf="auth.isAuthenticated()" mat-icon-button [matMenuTriggerFor]="menu"
+              aria-label="Example icon-button with a menu">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+          <mat-icon>dashboard</mat-icon>
+          <a (click)="goPage('account/balance')"><span>Account</span></a>
+<!--          <a href="account/balance"><span>Account</span></a>-->
+        </button>
+        <button mat-menu-item>
+          <mat-icon>attach_money</mat-icon>
+          <a (click)="goPage('account/topup')"><span>Top Up</span></a>
+<!--          <a href="account/topup"><span>Top Up</span></a>-->
+        </button>
+        <button mat-menu-item>
+          <mat-icon>person_pin</mat-icon>
+          <a (click)="goPage('profile')"><span>Profile</span></a>
+<!--          <a href="profile"><span>Profile</span></a>-->
+        </button>
+        <button mat-menu-item>
+          <mat-icon>exit_to_app</mat-icon>
+          <a (click)="auth.logout()"><span>Logout</span></a>
+        </button>
+      </mat-menu>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <section class="progress-bar">
+    <mat-progress-bar [color]="'primary'" [mode]="progressBarMode">
+    </mat-progress-bar>
+  </section>
+</header>

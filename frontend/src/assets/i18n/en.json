@@ -1,0 +1,35 @@
+{
+  "Continue with Facebook": "Continue with Facebook",
+  "Register with an email": "Register with an email",
+  "Submit": "Submit",
+  "Verify": "Verify",
+  "Login": "Login",
+  "login comment": "By clicking on Register or Continue, I accept the Terms of Service , the Payment Terms, and the privacy notice.",
+
+  "Edit Profile": "Edit Profile",
+  "First Name": "First Name",
+  "Last Name": "Last Name",
+  "Email": "Email",
+  "Mobile Phone": "Mobile Phone",
+  "Birthday": "Birthday",
+  "Gender": "Gender",
+  "Male": "Male",
+  "Female": "Female",
+  "Zip Code": "Zip Code",
+  "City": "City",
+
+  "Connect your ticket": "Connect your ticket",
+  "Ticket Number": "Ticket Number",
+  "Where can I find my ticket number?": "Where can I find my ticket number?",
+  "Active Event": "Active Event",
+  "Connect Ticket": "Connect Ticket",
+
+  "My Balance": "My Balance",
+  "Account": "Account",
+  "Balance QR Notice": "Don't share this code with anyone.<br/>This is your purchase.\nArrive at N place at N time and show this QR Code to obtain your balance.",
+  "Preload More Balance": "Preload More Balance",
+
+  "Code": "Code",
+
+  "Complete Profile": "Complete Profile"
+}
