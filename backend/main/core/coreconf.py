@@ -15,8 +15,8 @@ class CoreConf(object):
 
     # Facebook GraphAPI settings
     # FB_GRAPHAPI_VERSION = '3.2'
-    # FB_APP_ID = '291886031705412'
-    # FB_APP_SECRET = 'c6c51c61a965f92ed822d38abcd96cab'
+    # FB_APP_ID = ''
+    # FB_APP_SECRET = ''
 
     # Google Signin
     # GOOGLE_CLIENT_ID = ''
